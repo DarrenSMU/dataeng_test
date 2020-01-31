@@ -4,7 +4,7 @@
 
 2. Frontend sends REST api calls to api gateway through http, gateway maps the calls to microservices written in some backend server processing language (nodeJs) hosted on aws lambda OR could use ec2 instance.
 
-3. microservices has logic that interacts with AWS Kafka managed streaming service (MSK), (ie topic creation, produce, consume that get data from stream OR commits data to stream) 
+3. microservices has logic that interacts with AWS Kafka managed streaming service (MSK), (ie topic creation, produce, consume that get data from stream OR process and commits data to stream) 
 
 4. some microservices has logic to edit some db (postgresql) on aws RDS to change statistics of customers and their photos depending on data received
 
